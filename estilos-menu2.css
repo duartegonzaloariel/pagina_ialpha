@@ -21,7 +21,7 @@ ul{
 }
 /* estilos de la navegacion*/
 .nav-main{
-    background: #000;
+    background:#3f3f3f;
     color: #fff;
     font-size: 15px;
     display: flex;
