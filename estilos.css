@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:#000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.conteiner {
+    width: 95%;
+    margin: auto;
+}
+/* estilos de la navegacion*/
+.nav-main{
+    background-color: #000;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    
+    height: 120px;
+    padding: 10px 0;
+}
+.nav-logo{
+    height: 100px;
+}
+.nav-main div{
+    flex:1;
+}
+.nav-main p{
+    margin-top: 20px;
+
+    font-size: 50px;
+    position: initial;
+}
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul.nav-menu{
+    
+    margin-left: 30px;
+    margin-top: 35px;
+    
+}
+.nav-main ul.nav-menu-right{  
+    margin-top: 35px;
+}
+
+.nav-main ul li a:hover{
+border-bottom:2px solid#fff;
+opacity: .7;
+}
+.nav-main ul li a{
+    padding: 6px;
+}
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 45px;
+    right: 45px;
+    font-size: 30px;
+    display: none;
+}   
+hr {
+    margin: 5px;
+}
+/*  showcase  */
+.showcase{
+    width: 100%;
+    height: 250px;
+    background: url('./imagenes/en_pagina/pexels-tara-winstead-8386440\ -\ copia\ -\ copia.jpg')no-repeat center/cover;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    justify-content: flex-end;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bolder;
+    padding: 10px 20px;
+    background: #000;
+    border:2px solid #fff;
+    margin-top: 10px;    
+}
+.btn:hover{
+    opacity: .7;
+}
+/*segundo menu*/
+.nav-main2{
+    background-color: #000;
+}
+.nav-main2 ul{
+    display: flex;
+}
+.nav-main2 ul li{
+    padding: 10px;
+}
+.nav-main2 ul.nav-menu2{
+    flex: 1;
+    margin-top: 10px;
+}
+.nav-main2 ul li a:hover{
+opacity: .7;
+}
+.nav-main2 ul li a{
+    padding: 6px;
+}   
+.menu-btn2{
+    position: absolute;
+    cursor: pointer;
+    top: 420px;
+    right: 45px;
+    font-size: 30px;
+    display:none;
+}
+/* cartas de noticias*/
+.news-card{
+    background-color: #e1e1e1;
+    
+    margin-bottom: 40px;
+    padding: 20px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:30px;
+    
+}
+.news-card img{
+    width: 100%;
+    height: 250px;
+    margin:20px 0;
+    box-shadow: 10px 10px 10px #000;
+    
+}
+.news-card h3{
+    color: #000;
+    margin: 5px 0
+
+} 
+.news-card p {
+    color: #000;
+    margin: 10px 0;
+}  
+.btn2{
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight:bolder;
+    padding: 10px 20px;
+    border:2px solid #000;
+    margin-top: 10px;    
+}
+.btn2:hover{
+    opacity: .7;
+}
+/*seccion*/
+section{
+    width: 80%;
+    margin: auto;
+}
+.baner-one{   
+    margin: 90px 0;
+    padding: 50px;
+    height: 560px;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    display: flex;
+    flex-direction: column;
+    background-image: url(./imagenes/en_pagina/pexels-tara-winstead-8386423.jpg);
+    background-size: cover;
+    filter: invert(0.1) brightness(1.7);
+    opacity: 0.9;
+
+}
+
+.baner-one h2{  
+    color:#000;
+    margin: 20px 0;
+}   
+.baner-one p {
+    font-size: 20px;
+    color:#000;
+    line-height: 1.5;
+    
+
+}
+/* redes sociales*/
+.social{
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.social p{
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.link-social {
+    display: flex;
+    align-items: 30px;
+    justify-content: center;
+}
+.link-social a{
+    margin: 0 30px;
+}
+.link-social i{
+    font-size: 50px;
+}
+/* footers links*/
+.footer-links{
+    background:#3f3f3f;
+    color: #616161;
+    font-size: 15px; 
+    padding: 35px 0;
+}
+.footer-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer-conteiner ul{
+    margin: 0 auto;
+}
+.footer-conteiner li{
+    line-height: 2;
+}
+.footerr{
+    background:#3f3f3f;
+    color: #fff;
+    font-size: 15px;
+    padding: 30px 0;
+    text-align: center;
+}
+@media (max-width:1200px){
+    .news-card{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        height: 100%;
+        width: 250px;
+        padding: 30px;
+        padding-top: 80px;
+        transform: translateX(-400px);
+        opacity: .9;
+        transition:transform .5s ease-in-out; 
+    }
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-30px);        
+    }
+    .nav-main ul.nav-menu li{
+        padding: 20px 0;
+    }
+    .nav-main ul.nav-menu-right{
+        margin-right: 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 30;
+    }
+}
+@media (max-width:900px){
+    .footer-conteiner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nav-main2 ul.nav-menu2{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:rgb(2, 2, 177);
+        height: 100%;
+        width: 250px;
+        padding: 30px;
+        transform: translateX(-400px);
+        
+        opacity: .9;
+        z-index: 10;
+        transition:transform .5s ease-in-out;
+    }
+    .nav-main2 ul.nav-menu2.show2{
+        transform: translateX(-30px);  
+        transform: translateY(400px);  
+          
+    }
+    .nav-main2 ul.nav-menu2 li{
+        padding: 20px 0;
+    }
+    .menu-btn2{
+        display: block;
+        z-index: 40;
+    }
+}
+@media (max-width:700px){
+    .news-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-conteiner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-main p{
+        font-size: 0px;
+        position: initial;
+    }
+    .baner-one p {
+        font-size: 17px;
+        color:#000;
+        line-height: 1;
+}
+@media (max-width:500px){
+    .baner-one{   
+        margin: 90px 0;
+        padding: 50px;
+        height: 1150px;
+        background-size: cover;
+        background-repeat: no-repeat;  
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
