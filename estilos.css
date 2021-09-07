@@ -227,7 +227,7 @@ section{
 }
 /* footers links*/
 .footer-links{
-    background:#3f3f3f;
+    background:linear-gradient(#222,#666);
     color: #616161;
     font-size: 15px; 
     padding: 35px 0;
@@ -246,7 +246,7 @@ section{
     line-height: 2;
 }
 .footerr{
-    background:#3f3f3f;
+    background:#666;
     color: #fff;
     font-size: 15px;
     padding: 30px 0;
