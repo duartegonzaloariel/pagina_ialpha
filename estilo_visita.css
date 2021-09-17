@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+section{
+    padding:50px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-contacto {
+    width: 510px;
+    height: 300px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    text-align: center;
+    opacity: 0.8;
+    font-size: 15px;
+}
+.card-contacto:hover{
+    box-shadow: 10px 10px 10px #000;
+    transform: translateY(-15px);
+    font-size: 22px;
+    opacity: 1;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    background: #0f5355;
+    border-radius: 15px;
+}
+.cabecera div{
+    flex:1;
+}
+.imagen img{
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background:#0f5355;
+    padding: 6px;
+    z-index: 1;
+}
+.nav-logo3{
+    width: 400px;
+    margin-top: 5px;
+    position: relative;
+    margin-left: -90px;
+    z-index: 0;
+    border-radius:0px 15px 15px 0px;
+}
+.descripcion {
+    margin-left: -320px;
+    margin-top: 60px;
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    z-index: 200;
+    color: #000;
+}
+.descripcion h2 {
+    color: #0f5355;
+    font-size: 40px;
+}   
+.descripcion h3{
+    margin-top: 10px;
+    text-align: center;
+    color: #0f5355;
+    font-size: 20px;
+}
+.cabecera ul{
+    display: flex;
+}
